@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Daily Expense Note</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Expense</string>
+    <string name="title_add">Add</string>
+    <string name="gallery_text">Gallery Image(if any)</string>
+    <string name="camera_text">Camera Image(if any)</string>
+
+
+    <string-array name="expense_type">
+        <item>Enter Expense Type</item>
+        <item>Lunch</item>
+        <item>Accesory</item>
+        <item>Roads</item>
+    </string-array>
+</resources>

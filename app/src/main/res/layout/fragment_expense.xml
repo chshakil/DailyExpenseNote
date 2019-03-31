@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2ecc71"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.ExpenseFragment">
+
+    <Spinner
+        android:id="@+id/expenseSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        >
+
+    </Spinner>
+
+    <View
+        android:layout_below="@+id/expenseSpinner"
+        android:id="@+id/seperatorV"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E2DDDE"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    <LinearLayout
+        android:layout_below="@+id/seperatorV"
+        android:id="@+id/dateLL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/fromeDateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From Date"
+            />
+        <ImageView
+            android:id="@+id/fromDateIV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/date_icon"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/toDateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Date"
+            android:layout_marginLeft="10dp"
+            />
+        <ImageView
+            android:id="@+id/toDateIV"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/date_icon"
+            />
+
+
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/dateLL"
+        android:id="@+id/secondSeperatorV"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E2DDDE"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/secondSeperatorV"
+        android:id="@+id/expenseShowRCV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
